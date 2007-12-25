@@ -3,7 +3,7 @@ Summary(pl.UTF-8):	Klon Othello (wersja GTK+)
 Name:		hexxagon
 Version:	1.0
 Release:	1
-License:	GPL
+License:	GPL v2+
 Group:		X11/Applications/Games
 Source0:	http://nesqi.homeip.net/hexxagon/download/%{name}-%{version}.tar.bz2
 # Source0-md5:	f4064f4324598453dacbc1387aa0482c
@@ -12,8 +12,8 @@ Source1:	%{name}.png
 Source2:	%{name}.desktop
 Patch0:		%{name}-gcc4.patch
 URL:		http://nesqi.homeip.net/hexxagon/
-BuildRequires:	gtk+2-devel
-BuildRequires:	gtkmm-devel
+BuildRequires:	gtkmm-devel >= 2.4
+BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
