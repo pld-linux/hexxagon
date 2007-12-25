@@ -1,3 +1,5 @@
+# TODO
+# - needs gcc4 fix
 Summary:	Othello clone (GTK version)
 Name:		hexxagon
 Version:	1.0
@@ -7,7 +9,7 @@ Source0:	http://nesqi.homeip.net/hexxagon/download/%{name}-%{version}.tar.bz2
 # Source0-md5:	f4064f4324598453dacbc1387aa0482c
 License:	GPL
 Group:		Applications/Games/Boards
-BuildRequires:	gtk+-devel
+BuildRequires:	gtk+2-devel
 BuildRequires:	gtkmm-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -37,5 +39,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README
 %attr(755,root,root) %{_bindir}/%{name}
-%{_iconsdir}/%{name}.png
+#%{_iconsdir}/%{name}.png
 %{_datadir}/%{name}
