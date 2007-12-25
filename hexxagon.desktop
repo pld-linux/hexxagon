@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Hexxagon
+Comment=Clone of Hexxagon
+Exec=hexxagon
+Terminal=false
+Icon=hexxagon.png
+Type=Application
+Encoding=UTF-8
+Categories=Game;BoardGame;GTK;
+# vi: encoding=utf-8
