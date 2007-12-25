@@ -1,6 +1,7 @@
 [Desktop Entry]
 Name=Hexxagon
 Comment=Clone of Hexxagon
+Comment[pl]=Klon Hexxagona
 Exec=hexxagon
 Terminal=false
 Icon=hexxagon.png
