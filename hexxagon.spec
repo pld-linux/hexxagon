@@ -1,14 +1,14 @@
-# TODO
-# - needs gcc4 fix
 Summary:	Othello clone (GTK version)
+Summary(pl.UTF-8):	Klon Othello (wersja GTK)
 Name:		hexxagon
 Version:	1.0
 Release:	0.1
-URL:		http://nesqi.homeip.net/hexxagon/
 Source0:	http://nesqi.homeip.net/hexxagon/download/%{name}-%{version}.tar.bz2
 # Source0-md5:	f4064f4324598453dacbc1387aa0482c
+Patch0:		%{name}-gcc4.patch
 License:	GPL
-Group:		Applications/Games/Boards
+Group:		X11/Applications/Games
+URL:		http://nesqi.homeip.net/hexxagon/
 BuildRequires:	gtk+2-devel
 BuildRequires:	gtkmm-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -17,8 +17,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Hexxagon is a clone of Hexxagon, an adaptation of the Othello board
 game written for DOS. This is the GTK1 version of Hexxagon.
 
+%description -l pl.UTF-8
+Hexxagon to klon gry Hexxagon, adapcji planszowej gry Othello dla
+DOS-a. Jest to wersja GTK1 gry Hexxagon.
+
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %configure
