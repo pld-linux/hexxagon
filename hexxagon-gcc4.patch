@@ -1,0 +1,19 @@
+--- hexxagon-1.0/src/libhexx/bitboard64.h~	2005-01-13 22:19:07.000000000 +0100
++++ hexxagon-1.0/src/libhexx/bitboard64.h	2007-12-25 19:00:00.404342440 +0100
+@@ -55,13 +55,11 @@
+             printf("0x%X, 0x%X\n", lowbits, highbits);
+         };
+         
+-        friend std::ostream& operator<<(std::ostream &output, const class BitBoard64 &b);
+-		friend std::istream& operator>>(std::istream &input, class BitBoard64 &b);
+ 		
+-	private:
+-		
+-		uint32_t lowbits, highbits;
++	uint32_t lowbits, highbits;
+ 	};
++        std::ostream& operator<<(std::ostream &output, const class BitBoard64 &b);
++	std::istream& operator>>(std::istream &input, class BitBoard64 &b);
+ }
+ 
+ #endif
