@@ -26,7 +26,7 @@ DOS-a. Jest to wersja GTK+ gry Hexxagon.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 %configure
